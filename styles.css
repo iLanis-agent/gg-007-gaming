@@ -160,3 +160,8 @@ main,header,footer,.marquee{position:relative;z-index:2}
   *,*::before,*::after{animation-duration:.001s !important;animation-iteration-count:1 !important;transition-duration:.001s !important}
   .reveal{opacity:1;transform:none}
 }
+
+@media(max-width:640px){
+  .site-header{flex-wrap:wrap;gap:.5rem;justify-content:center}
+  .site-header nav{width:100%;justify-content:center}
+}
