@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GG 007 Gaming - Every game ends in GG.</title>
+<meta name="description" content="GG 007 Gaming - an independent arcade studio from the neon underground. Zero defeats. Zero shortcuts. Seven worlds. Every game ends in GG.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="starfield" aria-hidden="true"></canvas>
+<div class="scanlines" aria-hidden="true"></div>
+
+<header class="site-header">
+  <a class="brand" href="#top">
+    <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+      <path d="M32 4 56 18v28L32 60 8 46V18Z" fill="none" stroke="currentColor" stroke-width="3"/>
+      <path d="M22 26h8v4h-4v4h4v4h-8zM36 26h8v4h-4v4h4v4h-8z" fill="currentColor"/>
+    </svg>
+    <span>GG&nbsp;007&nbsp;GAMING</span>
+  </a>
+  <nav>
+    <a href="#legend">The Legend</a>
+    <a href="#code">The Code</a>
+    <a href="#games">Games</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="mascot" aria-hidden="true">
+        <svg viewBox="0 0 200 200" class="mascot-svg">
+          <defs>
+            <linearGradient id="mascotBody" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#19e8ff"/>
+              <stop offset="1" stop-color="#0a5f9e"/>
+            </linearGradient>
+            <radialGradient id="mascotGlow" cx=".5" cy=".4" r=".7">
+              <stop offset="0" stop-color="#19e8ff" stop-opacity=".55"/>
+              <stop offset="1" stop-color="#19e8ff" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle cx="100" cy="100" r="96" fill="url(#mascotGlow)"/>
+          <path d="M100 28c-33 0-56 25-56 60v74l16-13 15 13 15-13 15 13 15-13 16 13V88c0-35-23-60-36-60z" fill="url(#mascotBody)" stroke="#b9f6ff" stroke-width="3"/>
+          <circle cx="82" cy="88" r="9" fill="#04121f"/><circle cx="120" cy="88" r="9" fill="#04121f"/>
+          <circle cx="85" cy="85" r="3" fill="#b9f6ff"/><circle cx="123" cy="85" r="3" fill="#b9f6ff"/>
+          <path d="M84 116q18 14 34 0" fill="none" stroke="#04121f" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <p class="hero-kicker">INSERT COIN</p>
+      <h1 class="hero-title glitch" data-text="GG 007 GAMING">GG 007 GAMING</h1>
+      <p class="hero-catch">Every game ends in <span class="gg">GG.</span></p>
+      <p class="hero-sub">An independent arcade studio from the neon underground.<br>Zero defeats. Zero shortcuts. Seven worlds.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#games">Enter the Arcade</a>
+        <a class="btn btn-ghost" href="#legend">Read the Legend</a>
+      </div>
+    </div>
+    <div class="grid-floor" aria-hidden="true"></div>
+  </section>
+
+  <!-- CATCHPHRASE MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>PLAY BRAVE ✦ EVERY GAME ENDS IN GG ✦ ZERO DEFEATS ✦ ZERO SHORTCUTS ✦ SEVEN WORLDS ✦ </span><span>PLAY BRAVE ✦ EVERY GAME ENDS IN GG ✦ ZERO DEFEATS ✦ ZERO SHORTCUTS ✦ SEVEN WORLDS ✦ </span>
+    </div>
+  </div>
+
+  <!-- LEGEND -->
+  <section id="legend" class="panel legend">
+    <h2 class="section-title reveal">THE LEGEND OF GG&#8209;007</h2>
+    <div class="legend-card reveal">
+      <p class="typewriter" id="legend-text" data-text="In 1987, on the last night of a condemned seaside arcade, every machine lit up at once. Nobody admitted to plugging them in."></p>
+      <p class="legend-body reveal">By morning, seven cabinets carried a new top score, each signed the same two letters: <strong>GG</strong>. Seven games. Zero defeats. Zero witnesses. The player was never seen again - only a codename left glowing on the leaderboards: <strong>GG&#8209;007</strong>.</p>
+      <p class="legend-body reveal">We found the machines. We kept the codename. And we swore to build games worthy of the ghost.</p>
+      <p class="legend-sign reveal">- The Arcade Keepers</p>
+    </div>
+  </section>
+
+  <!-- CODE -->
+  <section id="code" class="panel">
+    <h2 class="section-title reveal">THE CODE</h2>
+    <div class="code-grid">
+      <div class="code-card reveal"><div class="code-digit">0</div><h3>ZERO DEFEATS</h3><p>We don't ship it until we'd play it. Every title earns its place on the cabinet.</p></div>
+      <div class="code-card reveal"><div class="code-digit">0</div><h3>ZERO SHORTCUTS</h3><p>No pay-to-win. No dark patterns. Skill, nerve, and a little luck - the way arcade games were meant to be.</p></div>
+      <div class="code-card reveal"><div class="code-digit">7</div><h3>SEVEN WORLDS</h3><p>Seven worlds to build, one by one. Three are already open. The ghost is watching the other four.</p></div>
+    </div>
+  </section>
+
+  <!-- GAMES -->
+  <section id="games" class="panel">
+    <h2 class="section-title reveal">THE ARCADE FLOOR</h2>
+    <p class="section-sub reveal">The first three cabinets are live. Step up.</p>
+    <div class="game-grid">
+      <article class="game-card reveal" data-tilt>
+        <div class="game-art art-tiletug" aria-hidden="true"><span class="fruit f1"></span><span class="fruit f2"></span><span class="fruit f3"></span></div>
+        <h3>TILE TUG</h3>
+        <p>A sliding-fruit tug of war. Shift rows, chain matches, and pull the rope your way before the machine pulls back.</p>
+        <span class="game-tag">PUZZLE / DUEL</span>
+      </article>
+      <article class="game-card reveal" data-tilt>
+        <div class="game-art art-chess" aria-hidden="true"><span class="sq"></span><span class="sq"></span><span class="sq"></span><span class="sq"></span><span class="piece">&#9822;</span></div>
+        <h3>POCKET CHESS</h3>
+        <p>The full royal game in your pocket. Quick matches, a stubborn AI, and one very proud knight named Sir Hopsalot.</p>
+        <span class="game-tag">STRATEGY / CLASSIC</span>
+      </article>
+      <article class="game-card reveal" data-tilt>
+        <div class="game-art art-ranks" aria-hidden="true"><span class="orb">?</span><span class="orb">?</span><span class="orb">?</span></div>
+        <h3>HIDDEN RANKS</h3>
+        <p>Every unit hides its weapon until the moment of battle. Rock, paper, scissors - fought like a war.</p>
+        <span class="game-tag">TACTICS / BLUFF</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- CATCHPHRASE FINALE -->
+  <section class="finale">
+    <p class="finale-line reveal">Play brave.</p>
+    <p class="finale-big reveal">Every game ends in <span class="gg">GG.</span></p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 GG 007 Gaming. Built by the Arcade Keepers.</p>
+  <p><a href="https://github.com/iLanis-agent/gg-007-gaming">Source on GitHub</a></p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
